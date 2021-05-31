@@ -1,0 +1,251 @@
+
+body{
+    scroll-behavior: smooth;
+    
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: rgb(47, 0, 255);
+    background: rgba(0, 0, 0, 0.144);
+  }
+  
+  ::selection {
+    color: rgb(241, 241, 241);
+    background: rgba(0, 0, 0, 0.863);
+ 
+  }
+
+.li{
+  font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 50px;
+   
+}
+
+.active{
+  padding-top: 5px;
+    font-size: 25px;
+    
+    background-color: rgba(128, 255, 0, 0.897);
+    border: 2px solid rgba(0, 0, 0, 0.836);
+    border-radius: 10px;
+    animation: shake 1.2s linear 2s infinite;
+ 
+
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    
+     25% { transform: translate(-3px, 0px) rotate(2deg); } 
+
+     50% { transform: translate(-1px, 2px) rotate(-1deg); } 
+
+     75% { transform: translate(3px, 0px) rotate(2deg); } 
+
+    100% { transform: translate(1px, 1px) rotate(0deg); }
+  }
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  animation: shake 10s linear infinite;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  backface-visibility: hidden;
+}
+.flip-card-back {
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    transform: rotateY(180deg);
+   height: 100%;
+    width: 100%;
+    
+}
+.hnameo{
+  font-family: 'Monoton', cursive;
+  font-size: 65px;
+  animation: uppero 2s linear 2s ; 
+   text-shadow: 0 0 80px;
+   
+   color: rgb(255, 255, 255);
+ 
+}
+@keyframes uppero {
+  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+    opacity:.1; text-shadow: 0 0 80px #ffffff,0 0 30px #04be04,0 0 6px #0000ff;
+    
+  }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.6; text-shadow: none; 
+  }
+}
+
+ .hnamei{
+   font-family: 'Monoton', cursive;
+   font-size: 65px;
+    
+    text-shadow: 0 0 80px;
+    animation: upper 2s linear 4s infinite; 
+    color: rgb(255, 0, 0) ;
+  
+ }
+ 
+ @keyframes upper {
+    0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+      opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #000000,0 0 6px #616175;
+      
+    }
+    20%,21.999%,63%,63.999%,65%,69.999% {
+      opacity:0.8; text-shadow: none; 
+    }
+  }
+
+.ppara{
+   margin-top: 1%;
+    font-size: 15px;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.432),rgba(255, 255, 255, 0.884));
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(36, 35, 35, 0.959);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: none;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.795);
+    border-radius: 5px;
+  }
+
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgba(48, 17, 221, 0.945); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    padding-left: 35vw;
+ 
+  }
+  
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .closebtn {
+    position: absolute;
+    margin-top: -4% !important ;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+ 
+.skills{
+  text-align: center; z-index: -1; position: absolute; font-size: 22rem; color: rgba(0, 0, 0, 0.747); top: 95vh; left: 22vw;
+  transform: rotate(-20deg);
+  font-family: 'Shadows Into Light', cursive;
+  filter: opacity(0.80);
+  animation: upper 4s linear 1 ; 
+}
+
+.level{
+  width: 50%; height: 22px; background-color: rgb(255, 255, 255); border-radius: 25px; cursor: pointer;
+}
+.sec h3{
+  color: rgb(255, 255, 255);
+ 
+}
+@media only screen and (max-width: 977px) {
+  .flip-card-back {
+  font-size: 10px;
+    
+}
+
+.flip-card{
+    padding-top: 80px;
+    
+}
+
+.mul{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+}
+.mli{
+  padding-left: 8%;
+}
+.sidenav {padding-top: 15px; display: table-row;}
+.sidenav a {font-size: 18px; align-items: center;}
+.sidenav input{margin-left: 25%!important;}
+.range{font-size: 25%;}
+.skills{
+top: 100vh;
+font-size: 6rem;
+}
+} 
+

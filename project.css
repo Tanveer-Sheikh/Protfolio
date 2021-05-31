@@ -1,0 +1,171 @@
+body{
+    scroll-behavior: smooth;
+    
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: rgb(47, 0, 255);
+    background: rgba(0, 0, 0, 0.144);
+  }
+  
+  ::selection {
+    color: rgb(241, 241, 241);
+    background: rgba(0, 0, 0, 0.863);
+ 
+  }
+
+.li{
+  font-weight: 500;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 50px;
+   
+}
+.active{
+  padding-top: 5px;
+    font-size: 25px;
+    
+    background-color: rgba(128, 255, 0, 0.897);
+    border: 2px solid rgba(0, 0, 0, 0.836);
+    border-radius: 10px;
+    animation: shake 1.2s linear infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    
+     25% { transform: translate(-3px, 0px) rotate(2deg); } 
+
+     50% { transform: translate(-1px, 2px) rotate(-1deg); } 
+
+     75% { transform: translate(3px, 0px) rotate(2deg); } 
+
+    100% { transform: translate(1px, 1px) rotate(0deg); }
+  }
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 130px;
+  animation: shake 10s linear infinite;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  backface-visibility: hidden;
+}
+.flip-card-back {
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    transform: rotateY(180deg);
+   height: 50%;
+    width: 100%;
+    
+}
+
+
+ .Pname{
+ 
+    font-size: 45px;
+    font-family: 'Monoton', cursive;
+ 
+    animation: upper 2s linear infinite; 
+    text-shadow: 0 0 80px;
+
+    color: rgb(255, 0, 0);
+   
+ }
+ @keyframes upper {
+    0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+      opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+    }
+    20%,21.999%,63%,63.999%,65%,69.999% {
+      opacity:0.4; text-shadow: none; 
+    }
+  }
+
+.ppara{
+   margin-top: 1%;
+    font-size: 15px;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.432),rgba(255, 255, 255, 0.884));
+    border: 2px solid black;
+}
+
+ @media only screen and (max-width: 977px) {
+  .flip-card-back {
+  font-size: 10px;
+    
+}
+.phead img{
+    width: 80%;
+}
+.ppara{
+    font-size: 8px;
+    margin-top: 6%;
+}
+.Pname{
+    font-size: 35px;
+}
+.hname{
+    padding-top: 30px;
+}
+.flip-card{
+    padding-top: 15px;
+    
+}
+} 
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(0, 132, 255, 0.74);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: none;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(128, 255, 0, 0.795);
+    border-radius: 5px;
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

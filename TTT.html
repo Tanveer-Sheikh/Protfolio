@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="ttt.css">
+    <title>Tanveer Sheikh | Resume </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="turn"></h1>
+    </div>
+    <div class="container">
+
+        <div class="d-flex">
+
+            <div onclick="fill(1)" class="ele e1"></div>
+            <div onclick="fill(2)" class="ele e2"></div>
+            <div onclick="fill(3)" class="ele e3"></div>
+        </div>
+        <div class="d-flex">
+
+            <div onclick="fill(4)" class="ele e4"></div>
+            <div onclick="fill(5)" class="ele e5"></div>
+            <div onclick="fill(6)" class="ele e6"></div>
+        </div>
+        <div class="d-flex">
+
+            <div onclick="fill(7)" class="ele e7"></div>
+            <div onclick="fill(8)" class="ele e8"></div>
+            <div onclick="fill(9)" class="ele e9"></div>
+        </div>
+
+
+    </div>
+    <script>
+        var player = 1;
+        document.getElementById("turn").innerHTML = "Player 1 Turn";
+        
+        function fill(x) {
+            
+
+            if (player == 1) {
+                document.getElementById("turn").innerHTML = "Player 2 Turn";
+              
+                v = "view1";
+             
+                player = 2;
+            }
+
+            else {
+                document.getElementById("turn").innerHTML = "Player 1 Turn";
+               
+                v = "view2";
+               
+                player = 1;
+
+            }
+
+
+
+
+            if (x == 1) {
+
+
+                z1 = document.querySelector(".e1")
+                z1.classList.add(v);
+             
+
+            }
+            if (x == 2) {
+
+                z2 = document.querySelector(".e2")
+                z2.classList.add(v);
+         
+            }
+
+
+            if (x == 3) {
+
+
+                z3 = document.querySelector(".e3")
+                z3.classList.add(v);
+            
+
+            }
+
+            if (x == 4) {
+
+
+                z4 = document.querySelector(".e4")
+                z4.classList.add(v);
+              
+            }
+
+
+            if (x == 5) {
+
+
+                z5 = document.querySelector(".e5")
+                z5.classList.add(v);
+               
+            }
+            if (x == 6) {
+                z6 = document.querySelector(".e6")
+                z6.classList.add(v);
+                
+            }
+
+            if (x == 7) {
+
+
+                z7 = document.querySelector(".e7")
+                z7.classList.add(v);
+               
+            }
+
+            if (x == 8) {
+
+
+                z8 = document.querySelector(".e8")
+                z8.classList.add(v);
+              
+            }
+
+            if (x == 9) {
+
+
+                z9 = document.querySelector(".e9")
+                z9.classList.add(v);
+               
+            }
+
+         
+        
+
+
+
+
+        }
+
+
+
+    </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

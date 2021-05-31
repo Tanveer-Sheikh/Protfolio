@@ -1,0 +1,15 @@
+.sym{
+    background-color: rgb(126, 200, 202)!important;
+    color: black;
+    text-align: center;
+}
+.num{
+    background-color: rgb(205, 248, 255)!important;
+    color: black;
+    text-align: center;
+}
+
+.resu{
+    width: 100%;
+    font-size: 2rem;
+}
